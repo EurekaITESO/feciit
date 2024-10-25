@@ -5,6 +5,7 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 <br />
+
 Repositorio de la página web de la Feria de Ciencias de ITESO. Utiliza [Astro](https://docs.astro.build/en/getting-started/) y [Tailwind](https://tailwindcss.com/). La lógica de código utiliza Typescript.
 
 ## Uso
