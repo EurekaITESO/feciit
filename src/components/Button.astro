@@ -1,0 +1,14 @@
+---
+const { role } = Astro.props as { role: "primary" | "secondary" | "tertiary" };
+const classColors = {
+  primary: "bg-primary-500 text-white hover:bg-primary-600",
+  secondary: "bg-secondary-500 text-white hover:bg-secondary-600",
+  tertiary: "bg-tertiary-500 text-white hover:bg-tertiary-600",
+  danger: "bg-red-500 text-white hover:bg-red-600",
+};
+---
+
+<button
+  class={`${classColors[role]} px-3 py-2 text-lg transition-colors rounded-full`}
+  ><slot /></button
+>
