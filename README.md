@@ -12,10 +12,12 @@ Repositorio de la página web de la Feria de Ciencias de ITESO. Utiliza [Astro](
 
 Para poder trabajar en éste repositorio es necesario tener `node` instalado. El proyecto fue creado con la versión `v23.1.0`, por lo que se recomienda usar ésta versión o superior para evitar cualquier conflicto.
 
-#### 1. Clona el repositorio
+#### 1. Clona el repositorio y accede a él
 
 ```bash
 git clone https://github.com/EurekaITESO/feciit.git
+
+cd ./feciit
 ```
 
 #### 2. Instala todas las dependencias de Node
