@@ -1,15 +1,32 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
+import '../styles/global.css';
+
+import Landing from '../components/Landing.jsx';
+import About from '../components/About.jsx';
+import Categories from '../components/Categories.jsx';
+import CallToAction from '../components/CallToAction.jsx';
+import Events from '../components/Events.jsx';
+import FAQ from '../components/FAQ.jsx';
 ---
 
-<Layout title="FECITT 2025">
-  <h1>Feria internacional de ITESO</h1>
-  <Button role="primary">Primario</Button>
-  <Button role="secondary">Secundario</Button>
-  <Button role="tertiary">Terciario</Button>
-  <Button role="danger">Peligro</Button>
-  <div>
-    <h2 class="text-white">Probando Tailwind</h2>
-  </div>
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Fair 2024</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="m-0 p-0 overflow-x-hidden bg-white text-gray-900 font-sans">
+    <div class="w-screen h-screen overflow-y-scroll scrollbar-none">
+      <Landing client:load />
+      <About client:load />
+      <Categories client:load />
+      <CallToAction client:load />
+      <Events client:load />
+      <FAQ client:load />
+    </div>
+  </body>
+</html>
